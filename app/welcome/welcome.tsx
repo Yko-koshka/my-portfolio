@@ -1,5 +1,5 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
+import logoDark from './logo-dark.svg';
+import logoLight from './logo-light.svg';
 
 export function Welcome() {
   return (
@@ -24,6 +24,8 @@ export function Welcome() {
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
               What&apos;s next?
             </p>
+            <h1 className="text-3xl font-bold underline">Hello world!</h1>
+
             <ul>
               {resources.map(({ href, text, icon }) => (
                 <li key={href}>
@@ -48,8 +50,8 @@ export function Welcome() {
 
 const resources = [
   {
-    href: "https://reactrouter.com/docs",
-    text: "React Router Docs",
+    href: 'https://reactrouter.com/docs',
+    text: 'React Router Docs',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +70,8 @@ const resources = [
     ),
   },
   {
-    href: "https://rmx.as/discord",
-    text: "Join Discord",
+    href: 'https://rmx.as/discord',
+    text: 'Join Discord',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
