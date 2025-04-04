@@ -1,9 +1,11 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@plugin 'daisyui';
+@plugin "daisyui" {
+  themes: emerald;
+}
 
-body {
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
