@@ -1,1 +1,9 @@
 @import 'tailwindcss';
+@import 'tw-animate-css';
+
+@plugin 'daisyui';
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
