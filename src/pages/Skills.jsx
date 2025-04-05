@@ -62,7 +62,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="h-screen py-12 pt-28 bg-emerald-50 text-emerald-900 text-center">
+    <section className="h-screen flex flex-col items-center justify-center bg-emerald-50 text-emerald-900 text-center">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

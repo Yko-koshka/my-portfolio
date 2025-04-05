@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
+import Avatar from '../assets/avatar.jpg';
 
 const Hero = () => {
   return (
     <section className="h-screen flex flex-col items-center justify-center text-center bg-emerald-50 text-emerald-900 to-teal-500 text-emerald-600">
       <motion.img
-        src="/avatar.png"
-        alt="Avatar"
-        className="w-32 h-32 mx-auto rounded-full shadow-xl border-4 border-white"
+        src={Avatar}
+        alt="Hanna Leheza"
+        className="w-32 h-32 object-contain mx-auto rounded-full shadow-xl border-4 border-white"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
