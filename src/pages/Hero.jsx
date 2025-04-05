@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="h-screen text-center pb-12 pt-28 bg-emerald-50 text-emerald-900 to-teal-500 text-emerald-600">
+    <section className="h-screen flex flex-col items-center justify-center text-center bg-emerald-50 text-emerald-900 to-teal-500 text-emerald-600">
       <motion.img
         src="/avatar.png"
         alt="Avatar"

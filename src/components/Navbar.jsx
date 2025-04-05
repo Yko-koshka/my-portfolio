@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { PiDevToLogoLight } from 'react-icons/pi';
 
 const Navbar = () => {
   // State to track whether the mobile menu is open or closed
@@ -14,8 +15,8 @@ const Navbar = () => {
     <nav className="bg-emerald-600 text-white fixed w-full shadow-md z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo with a link to the home page */}
-        <Link to="/" className="text-2xl font-bold">
-          MyPortfolio
+        <Link to="/">
+          <PiDevToLogoLight className="w-12 h-12 text-white" />
         </Link>
 
         {/* Desktop navigation links */}
