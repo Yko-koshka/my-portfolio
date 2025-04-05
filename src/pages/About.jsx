@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { PiDownloadSimpleBold } from 'react-icons/pi'; // Иконка скачивания
+import { PiDownloadSimpleBold } from 'react-icons/pi';
 
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
 
         {/* Download button */}
         <motion.a
-          href="/cv/Hanna_Leheza_CV.pdf" // <-- Укажи путь к своему резюме
+          href="/cv/Hanna_Leheza_CV.pdf"
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
