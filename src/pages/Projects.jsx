@@ -20,7 +20,7 @@ const projects = [
     imgSrc:
       'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
     githubLink: 'https://github.com/yourusername/project2',
-    demoLink: 'https://project2.netlify.app', // Добавлена ссылка на Netlify
+    demoLink: 'https://project2.netlify.app',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projects = [
     imgSrc:
       'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
     githubLink: 'https://github.com/yourusername/project3',
-    demoLink: 'https://project3.netlify.app', // Добавлена ссылка на Netlify
+    demoLink: 'https://project3.netlify.app',
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const projects = [
     imgSrc:
       'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
     githubLink: 'https://github.com/yourusername/project4',
-    demoLink: 'https://project4.netlify.app', // Добавлена ссылка на Netlify
+    demoLink: 'https://project4.netlify.app',
   },
 ];
 
