@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import project1Img from '../assets/project1.png';
+import project2Img from '../assets/project2.png';
+import project3Img from '../assets/project3.png';
+import project4Img from '../assets/project4.png';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
@@ -14,33 +17,31 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Project 2',
+    title: 'Comfy Store',
     description: 'Brief description of project 2.',
     stack: ['Angular', 'TypeScript', 'SCSS'],
-    imgSrc:
-      'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
-    githubLink: 'https://github.com/yourusername/project2',
-    demoLink: 'https://project2.netlify.app',
+    imgSrc: project2Img,
+    githubLink: 'https://github.com/Yko-koshka/react-comfy-store',
+    demoLink: 'https://superlative-naiad-f687ef.netlify.app/',
   },
   {
     id: 3,
-    title: 'Project 3',
+    title: 'App Weather',
     description: 'Brief description of project 3.',
     stack: ['Angular', 'TypeScript', 'SCSS'],
-    imgSrc:
-      'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
-    githubLink: 'https://github.com/yourusername/project3',
-    demoLink: 'https://project3.netlify.app',
+    imgSrc: project3Img,
+    githubLink: 'https://github.com/Yko-koshka/react-weather-app',
+    demoLink: 'https://verdant-tanuki-0af510.netlify.app/',
   },
   {
     id: 4,
-    title: 'Project 4',
+    title: 'App Dictionary',
     description: 'Brief description of project 4.',
     stack: ['Angular', 'TypeScript', 'SCSS'],
-    imgSrc:
-      'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
-    githubLink: 'https://github.com/yourusername/project4',
-    demoLink: 'https://project4.netlify.app',
+    imgSrc: project4Img,
+    githubLink:
+      'https://github.com/Yko-koshka/react-dictionary-app/tree/masters',
+    demoLink: 'https://bejewelled-bienenstitch-4e6407.netlify.app/',
   },
 ];
 
