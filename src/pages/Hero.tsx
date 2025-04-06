@@ -3,7 +3,7 @@ import Avatar from '../assets/avatar.jpg';
 
 const Hero = () => {
   return (
-    <section className="h-screen flex flex-col items-center justify-center text-center bg-emerald-50 text-emerald-900 to-teal-500 text-emerald-600">
+    <section className="h-screen flex flex-col items-center justify-center text-center bg-emerald-50 text-emerald-900">
       <motion.img
         src={Avatar}
         alt="Hanna Leheza"
@@ -26,4 +26,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;

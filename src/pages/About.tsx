@@ -31,7 +31,6 @@ const About = () => {
           <strong>TypeScript</strong>.
         </p>
 
-        {/* Ghost-Style Button */}
         <motion.a
           href="/cv/Hanna_Leheza_CV.pdf"
           download

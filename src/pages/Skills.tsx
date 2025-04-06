@@ -14,7 +14,17 @@ import {
   SiAdobephotoshop,
 } from 'react-icons/si';
 
-const skills = [
+type SkillItem = {
+  name: string;
+  icon: React.ReactNode;
+};
+
+type SkillCategory = {
+  category: string;
+  items: SkillItem[];
+};
+
+const skills: SkillCategory[] = [
   {
     category: '🚀 Core Technologies',
     items: [
@@ -60,7 +70,9 @@ const skills = [
   },
 ];
 
-const Skills = () => {
+interface SkillsProps {}
+
+const Skills = (props: SkillsProps) => {
   return (
     <section className="h-screen flex flex-col items-center justify-center bg-emerald-50 text-emerald-900 text-center">
       <motion.div
@@ -94,4 +106,5 @@ const Skills = () => {
     </section>
   );
 };
+
 export default Skills;

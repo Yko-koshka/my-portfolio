@@ -4,8 +4,19 @@ import project2Img from '../assets/project2.png';
 import project3Img from '../assets/project3.png';
 import project4Img from '../assets/project4.png';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import React from 'react';
 
-const projects = [
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  stack: string[];
+  imgSrc: string;
+  githubLink: string;
+  demoLink: string;
+}
+
+const projects: Project[] = [
   {
     id: 1,
     title: 'App Tasks',
@@ -59,7 +70,7 @@ const Projects = () => {
         <div className="flex justify-center flex-wrap gap-6 mt-6">
           {projects.map((project) => (
             <motion.div key={project.id} whileHover={{ scale: 1.05 }}>
-              <div className="card bg-white p-6 rounded-xl shadow-md border border-emerald-300 w-96 shadow-md">
+              <div className="card bg-white p-6 rounded-xl shadow-md border border-emerald-300 w-96">
                 <figure className="px-10 pt-10">
                   <img
                     src={project.imgSrc}
@@ -68,9 +79,9 @@ const Projects = () => {
                   />
                 </figure>
                 <div className="card-body items-center text-center">
-                  <h2 className="card-title text-emerald-700">
+                  <h3 className="card-title text-emerald-700">
                     {project.title}
-                  </h2>
+                  </h3>
                   <p className="text-gray-700">{project.description}</p>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {project.stack.map((tech, idx) => (
@@ -82,7 +93,7 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  <div className="mt-4 flex gap-4">
+                  <div className="mt-4 flex gap-4 justify-center">
                     <a
                       href={project.demoLink}
                       target="_blank"
@@ -109,4 +120,5 @@ const Projects = () => {
     </section>
   );
 };
+
 export default Projects;
