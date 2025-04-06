@@ -4,7 +4,6 @@ import project2Img from '../assets/project2.png';
 import project3Img from '../assets/project3.png';
 import project4Img from '../assets/project4.png';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import React from 'react';
 
 interface Project {
   id: number;
@@ -30,7 +29,7 @@ const projects: Project[] = [
     id: 2,
     title: 'Comfy Store',
     description: 'Brief description of project 2.',
-    stack: ['Angular', 'TypeScript', 'SCSS'],
+    stack: ['React', 'React Router', 'Redux', 'Vite', 'daisyUI', 'Tailwind'],
     imgSrc: project2Img,
     githubLink: 'https://github.com/Yko-koshka/react-comfy-store',
     demoLink: 'https://superlative-naiad-f687ef.netlify.app/',
@@ -39,7 +38,7 @@ const projects: Project[] = [
     id: 3,
     title: 'App Weather',
     description: 'Brief description of project 3.',
-    stack: ['Angular', 'TypeScript', 'SCSS'],
+    stack: ['React', 'CSS'],
     imgSrc: project3Img,
     githubLink: 'https://github.com/Yko-koshka/react-weather-app',
     demoLink: 'https://verdant-tanuki-0af510.netlify.app/',
@@ -48,10 +47,9 @@ const projects: Project[] = [
     id: 4,
     title: 'App Dictionary',
     description: 'Brief description of project 4.',
-    stack: ['Angular', 'TypeScript', 'SCSS'],
+    stack: ['React', 'CSS'],
     imgSrc: project4Img,
-    githubLink:
-      'https://github.com/Yko-koshka/react-dictionary-app/tree/masters',
+    githubLink: 'https://github.com/Yko-koshka/react-dictionary-app',
     demoLink: 'https://bejewelled-bienenstitch-4e6407.netlify.app/',
   },
 ];
