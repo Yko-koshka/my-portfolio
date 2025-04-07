@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { projects } from '../data';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const allTags = ['All', ...new Set(projects.flatMap((p) => p.stack))];
 
@@ -94,22 +94,12 @@ const Projects = () => {
                       ))}
                     </div>
                     <div className="mt-4 flex gap-4 justify-center">
-                      <a
-                        href={project.demoLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        to={`/projects/${project.slug}`}
                         className="text-sm inline-flex items-center gap-1 text-emerald-600 hover:underline"
                       >
-                        <FaExternalLinkAlt /> Live Demo
-                      </a>
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm inline-flex items-center gap-1 text-gray-700 hover:underline"
-                      >
-                        <FaGithub /> GitHub
-                      </a>
+                        → View Details
+                      </Link>
                     </div>
                   </div>
                 </div>

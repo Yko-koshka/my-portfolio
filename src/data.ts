@@ -7,6 +7,7 @@ import type { Project } from '@/types/projects';
 export const projects: Project[] = [
   {
     id: 1,
+    slug: 'app-tasks',
     title: 'App Tasks',
     description:
       'A task management app built with Angular. Features include task creation, editing, and deletion with real-time UI updates using RxJS. Styled with custom SCSS and component-based architecture.',
@@ -18,6 +19,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    slug: 'comfy-store',
     title: 'Comfy Store',
     description:
       'An e-commerce web app inspired by modern shopping experiences. Built with React, Redux, and Tailwind. Features include cart, product filtering, routing, and smooth UI transitions using daisyUI.',
@@ -29,6 +31,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    slug: 'app-weather',
     title: 'App Weather',
     description:
       'A lightweight weather forecast app powered by a public API. Users can search any city to view real-time temperature, humidity, and condition icons. Built with React and vanilla CSS.',
@@ -40,6 +43,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    slug: 'app-dictionary',
     title: 'App Dictionary',
     description:
       'A dictionary app allowing users to search for word meanings, phonetics, and audio pronunciation. Built with React and CSS, it fetches data from a public dictionary API.',
