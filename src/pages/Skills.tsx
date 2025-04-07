@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import { SkillCategory } from '@/types/skill';
+
 import {
   FaReact,
   FaAngular,
@@ -14,17 +16,7 @@ import {
   SiAdobephotoshop,
 } from 'react-icons/si';
 
-type SkillItem = {
-  name: string;
-  icon: React.ReactNode;
-};
-
-type SkillCategory = {
-  category: string;
-  items: SkillItem[];
-};
-
-const skills: SkillCategory[] = [
+export const skills: SkillCategory[] = [
   {
     category: '🚀 Core Technologies',
     items: [
@@ -70,9 +62,7 @@ const skills: SkillCategory[] = [
   },
 ];
 
-interface SkillsProps {}
-
-const Skills = (props: SkillsProps) => {
+const Skills = () => {
   return (
     <section className="h-screen flex flex-col items-center justify-center bg-emerald-50 text-emerald-900 text-center">
       <motion.div
