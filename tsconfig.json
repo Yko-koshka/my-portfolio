@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015", // or "es6"
+    "downlevelIteration": true, // optional but helpful
     "lib": ["dom", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -11,6 +12,7 @@
     "jsx": "react-jsx",
     "outDir": "./dist",
     "baseUrl": "./",
+
     "paths": {
       "@/*": ["src/*"]
     }

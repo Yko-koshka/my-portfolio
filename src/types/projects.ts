@@ -6,4 +6,5 @@ export type Project = {
   imgSrc: string;
   githubLink: string;
   demoLink: string;
+  tags: string[];
 };
