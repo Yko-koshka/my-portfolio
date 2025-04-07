@@ -7,10 +7,13 @@ type ContactLink = {
 };
 
 const contactLinks: ContactLink[] = [
-  { icon: <FaGithub />, link: 'https://github.com' },
-  { icon: <FaLinkedin />, link: 'https://linkedin.com' },
+  { icon: <FaGithub />, link: 'https://github.com/Yko-koshka' },
+  {
+    icon: <FaLinkedin />,
+    link: 'https://www.linkedin.com/in/hanna-leheza-494961233/',
+  },
   { icon: <FaTelegram />, link: 'https://t.me' },
-  { icon: <FaEnvelope />, link: 'mailto:email@example.com' },
+  { icon: <FaEnvelope />, link: 'mailto:legezaanna7@gmail.com' },
 ];
 
 const Contacts = () => {
