@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="bg-emerald-600 text-white fixed w-full shadow-md z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo with a link to the home page */}
-        <Link to="/">
+        <Link to="/my-portfolio/">
           <PiDevToLogoLight className="w-12 h-12 text-white" />
         </Link>
 
