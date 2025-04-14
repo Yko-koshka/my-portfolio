@@ -2,12 +2,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  resolve: {
-    alias: {
-      '@': '/src',
+export default defineConfig(({ mode }) => {
+  const isProd = mode === 'production';
+
+  return {
+    plugins: [react(), tailwindcss()],
+    resolve: {
+      alias: {
+        '@': '/src',
+      },
     },
-  },
-  base: '/portfolio.github.io/',
+    base: isProd ? '/my-portfolio/' : '/',
+  };
 });
