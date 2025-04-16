@@ -58,7 +58,7 @@ const Projects = () => {
         </div>
 
         {/* Project Cards */}
-        <div className="flex justify-center flex-wrap gap-6 mt-10">
+        <div className="flex justify-center flex-wrap gap-3 mt-10">
           <AnimatePresence mode="wait">
             {filteredProjects.map((project) => (
               <motion.div
@@ -70,7 +70,7 @@ const Projects = () => {
                 transition={{ duration: 0.3 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="card bg-white p-6 rounded-xl shadow-md border border-emerald-300 w-96">
+                <div className="card bg-white p-6 mx-6 rounded-xl shadow-md border border-emerald-300 w-auto md:w-96">
                   <figure className="px-10 pt-10">
                     <img
                       src={project.imgSrc}

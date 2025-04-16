@@ -42,7 +42,7 @@ const Navbar = () => {
       {/* Mobile dropdown menu */}
       {isOpen && (
         <ul className="md:hidden bg-emerald-700 text-white py-4 space-y-4 text-center">
-          {['Home', 'About', 'Skills', 'Projects', 'Contacts'].map((item) => (
+          {['About', 'Skills', 'Projects', 'Contacts'].map((item) => (
             <li key={item}>
               <Link
                 to={`/${item.toLowerCase()}`}
