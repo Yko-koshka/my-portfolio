@@ -1,9 +1,6 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-
-@plugin "daisyui" {
-  themes: emerald;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .container {
   max-width: 1200px;
