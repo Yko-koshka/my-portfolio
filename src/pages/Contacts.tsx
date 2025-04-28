@@ -12,7 +12,6 @@ const contactLinks: ContactLink[] = [
     icon: <FaLinkedin />,
     link: 'https://www.linkedin.com/in/hanna-leheza-494961233/',
   },
-  { icon: <FaTelegram />, link: 'https://t.me' },
   { icon: <FaEnvelope />, link: 'mailto:legezaanna7@gmail.com' },
 ];
 
